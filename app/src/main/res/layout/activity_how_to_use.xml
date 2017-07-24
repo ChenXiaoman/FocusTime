@@ -1,15 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.mango.focustime.Activity.HowToUseActivity">
+    tools:context="com.example.mango.focustime.Activity.HowToUseActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
 
-    <TextView
-        android:padding="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FocusTime aims to help you reduce phone distraction and addiction by blocking other apps on your phone during your FocusTime."/>
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opening"
+            style="@style/TextAppearance.AppCompat.Body1"/>
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/focusmode"
+            android:textAllCaps="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/focusmode_des" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/punishment"
+            android:textAllCaps="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/punishment_des" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo"
+            android:textAllCaps="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_des" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/others"
+            android:textAllCaps="true"
+            style="@style/Base.TextAppearance.AppCompat.Title"/>
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other_des" />
+    </LinearLayout>
+</ScrollView>
+

@@ -58,7 +58,7 @@
     <string name="confirm">Confirm</string>
     <string name="ok">OK</string>
     <string name="accessibility">Accessibility service</string>
-    <string name="please_open_access">Please turn on FocusTime accessibility service in Settings</string>
+    <string name="please_open_access">Please turn on FocusTime accessibility service in Settings for FocusTime to function normally.</string>
     <string name="cannot_open_app">This app is not allowed in FocusMode</string>
     <string name="add_todo">Add new todo</string>
     <string name="edit_todo">Edit todo</string>
@@ -92,4 +92,16 @@
     <string name="reminder">Reminder</string>
     <string name="set_blacklist_reminder">Set blacklist reminder</string>
     <string name="set_blacklist_reminder_key" translatable="false">key_show_blacklist_dialog_apps</string>
+    <string name="opening">FocusTime helps you avoid distractions of phones by blocking a list of apps in a certain period of time.</string>
+    <string name="focusmode">FocusMode</string>
+    <string name="focusmode_des">1. You can set the length of study time in FocusMode on your own.
+\n2. You can set your own blacklist for apps that will be disabled in FocusMode.</string>
+    <string name="punishment_des">1. Once you enter FocusMode, you will be punished by an unstoppable music will be played for 1 minute for cancel it.
+        \n2. If you force FocusTime to stop and remove it from Recent application list by swiping when you are in FocusMode, you will still be punished when you open FocusTime the next time.</string>
+    <string name="todo_des"> You can create a ToDo list for managing your work.
+    \nYou can Swipe to delete a todo task.</string>
+   <string name="other_des">1. Your total focus time will be recorded.
+   \n2. You can customize your motto in settings
+   \n3. You can open blacklist reminder to remind you set up blacklisted apps before FocusMode starts.</string>
+    <string name="others">others</string>
 </resources>

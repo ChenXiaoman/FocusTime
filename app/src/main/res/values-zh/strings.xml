@@ -64,4 +64,9 @@
     <string name="you_have_quit">你上次使用时在专注时间内强制退出，将接受惩罚。</string>
     <string name="iam_sorry">我错了</string>
     <string name="quited_focusmode">退出专注模式</string>
+    <string name="set_blacklist_reminder">设置黑名单提醒</string>
+    <string name="remember_blacklist">已设置应用黑名单了吗？</string>
+    <string name="reminder">提醒</string>
+    <string name="forgot">竟然忘了</string>
+    <string name="i_did">当然记得</string>
 </resources>
