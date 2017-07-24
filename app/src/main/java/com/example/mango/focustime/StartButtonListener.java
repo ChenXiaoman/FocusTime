@@ -292,6 +292,8 @@ public class StartButtonListener implements View.OnClickListener {
         stopService();
 
         storeTotalSecondsPassed();
+
+        alrClickForgot = false;
     }
 
     private void stopService() {
