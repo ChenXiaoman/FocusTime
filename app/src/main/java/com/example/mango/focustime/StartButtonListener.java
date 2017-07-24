@@ -16,11 +16,14 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.mango.focustime.Activity.FocusModeActivity;
+import com.example.mango.focustime.Activity.HowToUseActivity;
 import com.example.mango.focustime.Activity.PunishmentActivity;
+import com.example.mango.focustime.Activity.WhiteListActivity;
 import com.example.mango.focustime.lineartimer.LinearTimerStates;
 import com.example.mango.focustime.processutil.Features;
 import com.example.mango.focustime.receiver.ScreenReceiver;
@@ -57,6 +60,7 @@ public class StartButtonListener implements View.OnClickListener {
     private long secondLeft;
     private long totalSecondPassed;
     private boolean serviceStarted;
+    private boolean alrClickForgot;
 
 
     public StartButtonListener(Context context, Activity activity, LinearTimer linearTimer, BroadcastReceiver receiver) {
@@ -65,6 +69,7 @@ public class StartButtonListener implements View.OnClickListener {
         this.intent = activity.getIntent();
         this.linearTimer = linearTimer;
         this.mReceiver = receiver;
+        alrClickForgot = false;
 
         second = (EditText) activity.findViewById(R.id.second);
         minute = (EditText) activity.findViewById(R.id.minute);
@@ -76,10 +81,13 @@ public class StartButtonListener implements View.OnClickListener {
     public void onClick(View view) {
 
         if (s.getText().equals(context.getResources().getString(R.string.start_button))) {
-
             if (convertUserInputToTotalSecondsValid()) {
                 if (isAccessibilitySettingsOn(context)) {
-                    startTimer();
+                    if (!alrClickForgot && PreferenceUtilities.getShowBlacklistDialog(context)) {
+                        reminderBlacklist();
+                    } else {
+                        startTimer();
+                    }
                 } else {
                     openAccessibilityService();
                 }
@@ -87,6 +95,48 @@ public class StartButtonListener implements View.OnClickListener {
         } else {
             showAlertForQuitting();
         }
+    }
+
+    private void reminderBlacklist() {
+        final View content = activity.getLayoutInflater().inflate(
+                R.layout.dialog_content, null);
+        final CheckBox userCheck = (CheckBox) content //the checkbox from that view
+                .findViewById(R.id.check_box1);
+        //build the dialog
+        new AlertDialog.Builder(context)
+                .setTitle(R.string.blacklist)
+                .setMessage(R.string.remember_blacklist)
+                .setView(content)
+                .setPositiveButton(R.string.i_did,
+                        new DialogInterface.OnClickListener() {
+
+                            public void onClick(
+                                    DialogInterface dialog,
+                                    int which) {
+                                PreferenceUtilities.setShowBlacklistDialog(context, !userCheck.isChecked());
+                                dialog.dismiss(); //end the dialog.
+
+                                alrClickForgot = true;
+
+                                //Start the timer normally
+                                startTimer();
+                            }
+                        })
+                .setNegativeButton(R.string.forgot,
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(
+                                    DialogInterface dialog,
+                                    int which) {
+                                PreferenceUtilities.setShowBlacklistDialog(context, !userCheck.isChecked());
+                                dialog.dismiss();
+
+                                alrClickForgot = true;
+
+                                //Send users to set their blacklist
+                                Intent intent = new Intent(context, WhiteListActivity.class);
+                                context.startActivity(intent);
+                            }
+                        }).show();
     }
 
     public static boolean FocusModeStarted() {

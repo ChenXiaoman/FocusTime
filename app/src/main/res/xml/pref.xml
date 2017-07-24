@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/pref_category_reminder">
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:title="@string/pref_reminder_label"
-            android:key="@string/pref_reminder_key"
-            android:summaryOff="@string/pref_off"
-            android:summaryOn="@string/pref_on"
-            android:icon="@drawable/bell"/>
-
-    </PreferenceCategory>
-
     <PreferenceCategory android:title="@string/pref_category_motto_title">
     <EditTextPreference
         android:defaultValue="@string/pref_motto_default"
         android:key="@string/pref_motto_key"
         android:title="@string/pref_motto_label"
         android:icon="@drawable/pen"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/blacklist">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:title="@string/set_blacklist_reminder"
+            android:key="@string/set_blacklist_reminder_key"
+            android:summaryOff="@string/pref_off"
+            android:summaryOn="@string/pref_on"
+            android:icon="@drawable/bell"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

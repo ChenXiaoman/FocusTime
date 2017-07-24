@@ -77,9 +77,9 @@
                 android:layout_centerHorizontal="true"
                 timer:initialColor="@color/colorSecondaryDark"
                 timer:progressColor="@color/colorSecondaryLigit"
-                timer:radius="85dp"
+                timer:radius="75dp"
                 timer:startingPoint="270"
-                timer:strokeWidth="3dp" />
+                timer:strokeWidth="2dp" />
 
         </RelativeLayout>
 

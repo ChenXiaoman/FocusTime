@@ -17,6 +17,7 @@ public final class PreferenceUtilities {
     public static final String KEY_TOTAL_SECOND_RECORDED = "total-second-recorded";
     public static final String KEY_FORCE_QUIT = "force_quit_key";
     public static final String KEY_BLACKLIST_APPS = "key_blacklist_apps";
+    public static final String KEY_SHOW_BLACKLIST_DIALOG = "key_show_blacklist_dialog_apps";
 
     private static final int DEFAULT_COUNT = 0;
 
@@ -56,6 +57,19 @@ public final class PreferenceUtilities {
     public static boolean getForceQuit(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean forceQuit = prefs.getBoolean(KEY_FORCE_QUIT, false);
+        return forceQuit;
+    }
+
+    synchronized public static void setShowBlacklistDialog(Context context, boolean usable) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean(KEY_SHOW_BLACKLIST_DIALOG, usable);
+        editor.apply();
+    }
+
+    public static boolean getShowBlacklistDialog(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean forceQuit = prefs.getBoolean(KEY_SHOW_BLACKLIST_DIALOG, true);
         return forceQuit;
     }
 

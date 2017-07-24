@@ -86,4 +86,10 @@
     <string name="quited_focusmode">Quited FocusMode</string>
     <string name="you_have_quit">You\'ve quited FocusMode last time. You are getting punishment.</string>
     <string name="cannot_change_blacklist">FocusMode is started. You can\'t change blacklisted apps now.</string>
+    <string name="remember_blacklist">Did you remember to set blacklisted apps?</string>
+    <string name="i_did">Yes, I did</string>
+    <string name="forgot">No, I forgot</string>
+    <string name="reminder">Reminder</string>
+    <string name="set_blacklist_reminder">Set blacklist reminder</string>
+    <string name="set_blacklist_reminder_key" translatable="false">key_show_blacklist_dialog_apps</string>
 </resources>

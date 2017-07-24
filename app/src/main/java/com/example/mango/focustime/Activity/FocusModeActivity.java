@@ -52,6 +52,9 @@ public class FocusModeActivity extends AppCompatActivity implements LinearTimer.
     private SharedPreferences sharedPreferences;
     private Calendar calendar = Calendar.getInstance(Locale.ENGLISH);
     private TextView TVtotalFocusedTime;
+    private EditText second;
+    private EditText minute;
+    private TextView mark;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,9 +80,9 @@ public class FocusModeActivity extends AppCompatActivity implements LinearTimer.
         startButton.setOnClickListener(listener);
 
         // Set font
-        EditText second = (EditText) findViewById(R.id.second);
-        EditText minute = (EditText) findViewById(R.id.minute);
-        TextView mark = (TextView) findViewById(R.id.mark);
+        second = (EditText) findViewById(R.id.second);
+        minute = (EditText) findViewById(R.id.minute);
+        mark = (TextView) findViewById(R.id.mark);
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Oswald-Regular.ttf");
 
         second.setTypeface(custom_font);
@@ -112,9 +115,12 @@ public class FocusModeActivity extends AppCompatActivity implements LinearTimer.
         display.getMetrics(outMetrics);
 
         float density  = getResources().getDisplayMetrics().density;
-        float dpHeight = outMetrics.heightPixels / density;
         float dpWidth  = outMetrics.widthPixels / density;
-        linearTimerView.setCircleRadiusInDp((int) (dpWidth * 0.42));
+        linearTimerView.setCircleRadiusInDp((int) (dpWidth * 0.4));
+
+        second.setTextSize((float) (dpWidth * 0.18));
+        minute.setTextSize((float) (dpWidth * 0.18));
+        mark.setTextSize((float) (dpWidth * 0.18));
     }
 
     @Override
