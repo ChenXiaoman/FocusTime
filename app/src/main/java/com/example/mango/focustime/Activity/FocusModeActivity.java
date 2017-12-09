@@ -104,6 +104,7 @@ public class FocusModeActivity extends AppCompatActivity implements LinearTimer.
         startService(intent);
 
         if (PreferenceUtilities.getForceQuit(mContext)) {
+            Log.v("FocusModeActivity", "forquit method start");
             forceQuitPunish();
         }
 
@@ -189,6 +190,10 @@ public class FocusModeActivity extends AppCompatActivity implements LinearTimer.
         unregisterReceiver(mReceiver);
         Log.v("FocusModeActivity", "unregisterReceiver");
 
+        if (StartButtonListener.FocusModeStarted()) {
+            PreferenceUtilities.setForceQuit(mContext, true);
+            Log.v("FocusModeActivity", "setTrue");
+        }
 
         // Unregister VisualizerActivity as an OnPreferenceChangedListener to avoid any memory leaks.
         PreferenceManager.getDefaultSharedPreferences(this)

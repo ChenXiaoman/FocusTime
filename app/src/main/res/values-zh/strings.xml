@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">FocusTime</string>
+    <string name="app_name">寸金寸光阴</string>
     <string name="a_bit_empty">这里空空如也</string>
     <string name="a_little_punishment">给半途而废的小小惩罚！</string>
     <string name="accessibility">辅助功能</string>
@@ -50,8 +50,8 @@
     <string name="your_dream_futher">离梦想又远了吗？赶紧努力追赶吧！</string>
     <string name="sec_hint">SEC</string>
     <string name="min_hint">MIN</string>
-    <string name="pref_motto_default" translatable="false">寸金难买寸光阴</string>
-    <string name="click_access">请点击FocusTime</string>
+    <string name="pref_motto_default">寸金难买寸光阴</string>
+    <string name="click_access">请点击寸金寸光阴</string>
     <string name="pref_phone_key" translatable="false"></string>
     <string name="pref_category_blacklist_apps_title">选择专注模式下暂停使用的软件</string>
     <string name="blacklist">应用黑名单</string>
@@ -65,8 +65,17 @@
     <string name="iam_sorry">我错了</string>
     <string name="quited_focusmode">退出专注模式</string>
     <string name="set_blacklist_reminder">设置黑名单提醒</string>
-    <string name="remember_blacklist">已设置应用黑名单了吗？</string>
+    <string name="remember_blacklist">设置应用黑名单了吗？</string>
     <string name="reminder">提醒</string>
     <string name="forgot">竟然忘了</string>
     <string name="i_did">当然记得</string>
+    <string name="others">其它</string>
+    <string name="other_des">1. 用户每次的专注时长将被系统记录。\n2. 用户可在设置中自定义座右铭。\n3. 用户可开启应用黑名单设置提醒功能。</string>
+    <string name="todo_des">用户可使用任务清单功能，以帮助合理安排待办事项。\n每项任务均可滑动删除。</string>
+    <string name="focusmode">专注模式</string>
+    <string name="focusmode_des">1. 用户可在专注模式下自行设置学习时长。
+        \n2. 用户可自行设置应用黑名单。在专注模式下，黑名单中的应用将无法使用。
+        </string>
+    <string name="punishment_des">1. 一旦开启专注模式，用户无法停止或退出，直至倒计时结束。如若中途停止，用户将接到系统惩罚：被难听的音乐骚扰一分钟。 \n2. 如若强制关闭应用，下次打开时仍将接受惩罚。</string>
+    <string name="opening">寸金寸光阴旨在帮助用户减少沉迷于手机纷繁的应用干扰中，从而达到专注于工作学习的目的。</string>
 </resources>

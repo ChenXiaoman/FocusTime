@@ -94,14 +94,17 @@
     <string name="set_blacklist_reminder_key" translatable="false">key_show_blacklist_dialog_apps</string>
     <string name="opening">FocusTime helps you avoid distractions of phones by blocking a list of apps in a certain period of time.</string>
     <string name="focusmode">FocusMode</string>
-    <string name="focusmode_des">1. You can set the length of study time in FocusMode on your own.
+    <string name="focusmode_des">1. You can set the length of focus time in FocusMode on your own.
 \n2. You can set your own blacklist for apps that will be disabled in FocusMode.</string>
-    <string name="punishment_des">1. Once you enter FocusMode, you will be punished by an unstoppable music will be played for 1 minute for cancel it.
-        \n2. If you force FocusTime to stop and remove it from Recent application list by swiping when you are in FocusMode, you will still be punished when you open FocusTime the next time.</string>
+    <string name="punishment_des">1. Once you have entered FocusMode, you will be punished by an unstoppable 1-minute-long music for quitting.
+        \n2. If you force FocusTime to stop and remove it from the recent application list by swiping during FocusMode,
+        you will still get punished when you open FocusTime the next time.</string>
     <string name="todo_des"> You can create a ToDo list for managing your work.
-    \nYou can Swipe to delete a todo task.</string>
-   <string name="other_des">1. Your total focus time will be recorded.
+    \nYou can swipe to delete a todo task.</string>
+    <string name="other_des">1. Your total focus time will be recorded.
    \n2. You can customize your motto in settings
-   \n3. You can open blacklist reminder to remind you set up blacklisted apps before FocusMode starts.</string>
+   \n3. You can open blacklist reminder to remind you set up blacklisted apps before FocusMode starts.
+   \n4. FocusTime now supports two languages. English and Chinese. If the system is other languages other than English or Chinese, it will use the English version by default.
+</string>
     <string name="others">others</string>
 </resources>
