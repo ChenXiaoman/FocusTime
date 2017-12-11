@@ -1,0 +1,33 @@
+= FocusTime
+:imagesDir: images
+
+== Product Overview
+FocusTime is an Android app that helps you avoid distractions of phones by blocking a list of apps in a period of time set by the you.
+
+== Features
+image::description.png[width="300"]
+
+=== Blacklisted apps
+A list of apps will be provided by FocusTime and you can select a list of apps that you don't want to be distrated by. When the timer start, those apps will be disabled. So if you try to open a blacklisted app, FocusTime will close it.
+image::list.png[width="300"]
+
+[NOTE]
+However, the other apps on the phone that are not in the list of selected apps and the system pre-installed apps can still function normally. So, only the distracting apps(e.g. FaceBook, YouTube) are blocked and other apps that are useful and not distracting(e.g. Phone, Calculator) can still be used.
+
+=== Punishment
+When the timer starts, if you want to quit it, you will get punishment which is--a one-minute-long annoying music.
+
+image::quit.png[width="300"]
+
+Even if you want to force FocusTime to quit by removing from Recent application list by swiping, you will still get punishment the next time when you open the app.
+
+=== Todos
+
+image::todo.png[width="300"]
+
+=== Motto
+
+image::setting.png[width="300"]
+
+
+
