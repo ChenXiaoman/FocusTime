@@ -9,6 +9,7 @@ image::description.png[width="300"]
 
 === Blacklisted apps
 A list of apps will be provided by FocusTime and you can select a list of apps that you don't want to be distrated by. When the timer start, those apps will be disabled. So if you try to open a blacklisted app, FocusTime will close it.
+
 image::list.png[width="300"]
 
 [NOTE]
