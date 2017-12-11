@@ -10,10 +10,11 @@ image::description.png[width="300"]
 === Blacklisted apps
 A list of apps will be provided by FocusTime and you can select a list of apps that you don't want to be distrated by. When the timer start, those apps will be disabled. So if you try to open a blacklisted app, FocusTime will close it.
 
-image::list.png[width="300"]
+image::list.jpg[width="300"]
 
 [NOTE]
-However, the other apps on the phone that are not in the list of selected apps and the system pre-installed apps can still function normally. So, only the distracting apps(e.g. FaceBook, YouTube) are blocked and other apps that are useful and not distracting(e.g. Phone, Calculator) can still be used.
+However, the other apps on the phone that are not in the list of selected apps and the system pre-installed apps can still function normally. +
+So, only the distracting apps(e.g. FaceBook, YouTube) are blocked and other apps that are useful and not distracting(e.g. Phone, Calculator) can still be used.
 
 === Punishment
 When the timer starts, if you want to quit it, you will get punishment which is--a one-minute-long annoying music.
